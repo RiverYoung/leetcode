@@ -59,5 +59,8 @@ public class BinaryTreeDFSTest extends BinaryTreeTest{
         //剑指 Offer 54. 二叉搜索树的第 k 大节点
         int kthLargest = binaryTreeDFS.kthLargest(tRootBinarySearch, 4);
         System.out.println("kthLargest = " + kthLargest);
+
+        TreeNode tMergeTree = binaryTreeDFS.mergeTrees(tRoot2, tRootBinarySearch);
+        printBinaryTreeResult(binaryTreeBFS.levelOrder(tMergeTree));
     }
 }
